@@ -1,0 +1,236 @@
+/* Css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100px;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    margin: 7px 12px;
+}
+#logo img{
+    height: 60px ; 
+    border-radius: 180px;
+    margin: 6px 5px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    margin: 6.7px;
+    font-weight: bolder;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 250px;
+    height: 470px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background: url(Home.png) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    width: 10.5rem;
+    height: 4.0rem;
+    margin: 33px;
+    border-radius: 25px;
+}
+/* services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 232, 236);
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* clints Section */
+
+#Clints-Section::before{
+    content: "";
+    background: url(Clints.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clints img{
+    height: 134px;
+    padding: 25px;
+    border-radius: 30px;
+}
+/* Contact US Style */
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Contact::before{
+    content: "";
+    background: url(Contact\ Us.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#name{
+    height: 2rem;
+    width: 48%;
+    font-size: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    font-family: cursive;
+    margin: 10px;
+}
+#name1{
+    height: 10rem;
+    width: 48%;
+    font-size: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    font-family: cursive;
+    margin: 10px;
+}
+.btn2{
+    background-color: brown;
+    border: none;
+    margin: 40px;
+    width: 40%;
+    height: 3rem;
+    font-size: 1.8rem;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-family: cursive;
+}
+.btn2:hover{
+    cursor: pointer;
+    border: 3px solid black;
+    color: white;
+    font-size: 2rem;
+    font-family: cursive;
+    width: 41%;
+    height: 3rem;
+    margin: 40px;
+    border-radius: 25px;
+}
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+/* utility Classes */
+.center{
+    text-align: center;
+}
+.btn{
+    background-color: brown;
+    border: none;
+    margin: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+.h-primary{
+    font-size: 3.25rem;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+}
+.h-secondery{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    padding: 20px;
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Simple Media Query */
+@media only screen and (max-width: 1361px){
+    #home{
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 493px){
+    #navbar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 409px){
+    .height{
+        height: 90%;
+        width: 100%;
+    }
+}
